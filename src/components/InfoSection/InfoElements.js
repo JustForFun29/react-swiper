@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const InfoContainer = styled.div`
+export const InfoContainer = styled.section`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#f5f5f7')};
 

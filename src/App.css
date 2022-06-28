@@ -5,7 +5,6 @@
   font-family: "Encode Sans Expanded", sans-serif; 
 }
 
-.swiper-wrapper {
-  margin: 40px;
-  margin-left: 5px;
+body {
+  overflow-x: hidden;
 }

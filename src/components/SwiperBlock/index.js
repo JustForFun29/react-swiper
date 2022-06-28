@@ -31,7 +31,7 @@ export default function App({slides, tabs, header}) {
     }
 
     return (
-        <SwiperContainer id="tarifs">
+        <SwiperContainer>
             <SwiperTitle>
                 {header}
             </SwiperTitle>
