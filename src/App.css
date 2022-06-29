@@ -18,3 +18,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .swiper-pagination-clickable .swiper-pagination-bullet {
   background-color: #C92C7B;
 }
+
+.swiper-pagination {
+  bottom: 0 !important;
+}

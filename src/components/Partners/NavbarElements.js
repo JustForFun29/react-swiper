@@ -17,6 +17,8 @@ export const PartnersInner = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  list-style: none;
   justify-items: center;
   @media (max-width: 768px) {
     display: none;
@@ -42,6 +44,10 @@ export const PartnersItem = styled.div`
   position: relative;
   height: 200px;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   @media (max-width: 460px) {
     height: 220px;
   }
@@ -49,6 +55,8 @@ export const PartnersItem = styled.div`
 
 export const PartnersItemImg = styled.img`
   width: 150px;
+  height: 90px;
+  object-fit: contain;
   @media (max-width: 460px) {
     width: 200px;
   }
@@ -56,9 +64,14 @@ export const PartnersItemImg = styled.img`
 
 export const PartnersItemText = styled.p`
   width: 100%;
-  position: absolute;
-  left: 38px;
-  top: 137px;
+  margin-top: 10px;
+  margin-left: 10px;
+  //position: absolute;
+  left: 0;
+  top: 130px;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
   @media (max-width: 460px) {
     font-size: 20px;
   }
