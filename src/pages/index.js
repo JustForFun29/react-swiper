@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 import Pricing from "../components/Pricing/Pricing";
 import SwiperBlock from "../components/SwiperBlock";
 import Channels from "../components/Channels";
-import {slides, slides2, tabs, tabs2, partners} from "../data"
+import {slidesHouses, slidesTownHouse, slidesResidence, tabsHouses, tabsTownHouses, tabsResidence, partners} from "../data"
 import Partners from "../components/Partners";
 
 const Home = () => {
@@ -23,14 +23,14 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             <HeroSection/>
-            <InfoSection {...homeObjOne}/>
+            <InfoSection {...homeObjTwo}/>
             <Channels/>
             <section id='tarifs'>
-                <SwiperBlock slides={slides} tabs={tabs} header='Изучите тарифы и цены' />
-                <SwiperBlock slides={slides2} tabs={tabs2} header='Тарифы для таунхаусов'/>
+            <SwiperBlock slides={slidesHouses} tabs={tabsHouses} header='Для жителей частных домов' />
+            <SwiperBlock slides={slidesTownHouse} tabs={tabsTownHouses} header='Для жителей таунхаусов' />
+            <SwiperBlock slides={slidesResidence} tabs={tabsResidence} header='Для жителей жилых комплексов'/>
             </section>
             <Partners partners={partners}/>
-            <InfoSection {...homeObjTwo}/>
             <Footer/>
         </>
     );

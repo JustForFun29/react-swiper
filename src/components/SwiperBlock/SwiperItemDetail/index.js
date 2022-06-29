@@ -16,7 +16,7 @@ import Flex from "../../Flex";
 import {Transition} from "react-transition-group";
 
 
-const SwiperItemDetail = ({img, list, speed, active}) => {
+const SwiperItemDetail = ({img, list, speed, megogo, active}) => {
     return ( active &&
         <ItemDetailContainer active>
             <ItemDetailImg >
@@ -61,10 +61,10 @@ const SwiperItemDetail = ({img, list, speed, active}) => {
                             justify='space-between'
                         >
                             <GatewayTitle>
-                                Add an xFi Gateway at checkout
+                            Получите подписку на megogo за
                             </GatewayTitle>
                             <GatewayPrice>
-                                +$14/mo
+                            {megogo}
                             </GatewayPrice>
                         </Flex>
                         <p>

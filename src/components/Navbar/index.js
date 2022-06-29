@@ -34,7 +34,7 @@ const Navbar = ({toggle}) => {
                                 exact="true"
                                 offset={-80}
                             >
-                                Популярное
+                                Акция
                             </NavLinks>
                         </NavItem>
                         <NavItem>
@@ -60,31 +60,12 @@ const Navbar = ({toggle}) => {
                                 exact="true"
                                 offset={-79}
                             >
-                                Новости
-                            </NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks
-                                to=""
-                                activeClass='active'
-                                smooth={true}
-                                duration={500}
-                                spy={true}
-                                hashSpy={true}
-                                exact="true"
-                                offset={-80}
-                            >
-                                Сервисы
-                            </NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to="/registration">
-                                Регистрация
+                                Партнеры
                             </NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="/sign-in">Войти</NavBtnLink>
+                        <NavBtnLink to="/sign-in">Позвонить</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>

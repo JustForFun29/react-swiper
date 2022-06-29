@@ -21,7 +21,7 @@ const SwiperItem = ({color, speed, isActive, id, setActivePrice, onChange, units
             </svg>
             <SwiperItemPrice>{speed}</SwiperItemPrice>
             <SwiperItemPriceUnits>{units}</SwiperItemPriceUnits>
-            <SwiperItemText visible={isActive}>Check availability for starting at price</SwiperItemText>
+            <SwiperItemText visible={isActive}>Проверьте наличие по стартовой цене</SwiperItemText>
         </SwiperItemInner>
     );
 };
