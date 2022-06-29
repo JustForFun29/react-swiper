@@ -1,12 +1,16 @@
 import styled from 'styled-components'
 
-export const ChannelsContainer = styled.section`
+export const ChannelsWrapper = styled.section`
+  background: #f9f9f9;
+  padding: 200px 0;
+`
+export const ChannelsContainer = styled.div`
   max-width: 1620px;
-  margin: 200px auto;
+  
   display: flex;
   justify-content: center;
   position: relative;
-  height: 400px;
+  //height: 400px;
   @media (max-width: 910px) {
     height: auto;
     justify-content: flex-start;

@@ -15,7 +15,7 @@ import {
     ChannelsContent, ChannelsImg,
     ChannelsTitle, ChannelsVideo,
     ActionItemImg,
-    ChannelsVideoBlock, ConditionsItem, ConditionsText, ConditionsTitle
+    ChannelsVideoBlock, ConditionsItem, ConditionsText, ConditionsTitle, ChannelsWrapper
 } from "./SigninElements";
 
 const actions = [
@@ -27,48 +27,50 @@ const actions = [
 
 const Channels = () => {
     return (
-        <ChannelsContainer>
-            <ChannelsVideoBlock>
-                <ChannelsImg src={tvBorder} alt=""/>
-                <ChannelsVideo src={tvVideo} autoPlay muted>
-                    <source src={tvVideo} type='video/mp4'/>
-                </ChannelsVideo>
-            </ChannelsVideoBlock>
-            <ChannelsContent>
-                <ChannelsTitle>
-                    Телеканалы для
-                    всей семьи
-                </ChannelsTitle>
-                <ChannelsConditions>
-                    <ConditionsItem>
-                        <ConditionsTitle>
-                            130
-                        </ConditionsTitle>
-                        <ConditionsText>
-                            телеканалов
-                        </ConditionsText>
-                    </ConditionsItem>
-                    <ConditionsItem>
-                        <ConditionsTitle>
-                            7 дней
-                        </ConditionsTitle>
-                        <ConditionsText>
-                            записи эфира
-                        </ConditionsText>
-                    </ConditionsItem>
-                </ChannelsConditions>
-                <ChannelsActions>
-                    <ActionsList>
-                        {actions.map(action =>
-                            <ActionItem>
-                                <ActionItemImg src={action.img} alt=""/>
-                                <ActionItemText>{action.title}</ActionItemText>
-                            </ActionItem>
-                        )}
-                    </ActionsList>
-                </ChannelsActions>
-            </ChannelsContent>
-        </ChannelsContainer>
+        <ChannelsWrapper>
+            <ChannelsContainer>
+                <ChannelsVideoBlock>
+                    <ChannelsImg src={tvBorder} alt=""/>
+                    <ChannelsVideo src={tvVideo} autoPlay muted>
+                        <source src={tvVideo} type='video/mp4'/>
+                    </ChannelsVideo>
+                </ChannelsVideoBlock>
+                <ChannelsContent>
+                    <ChannelsTitle>
+                        Телеканалы для
+                        всей семьи
+                    </ChannelsTitle>
+                    <ChannelsConditions>
+                        <ConditionsItem>
+                            <ConditionsTitle>
+                                130
+                            </ConditionsTitle>
+                            <ConditionsText>
+                                телеканалов
+                            </ConditionsText>
+                        </ConditionsItem>
+                        <ConditionsItem>
+                            <ConditionsTitle>
+                                7 дней
+                            </ConditionsTitle>
+                            <ConditionsText>
+                                записи эфира
+                            </ConditionsText>
+                        </ConditionsItem>
+                    </ChannelsConditions>
+                    <ChannelsActions>
+                        <ActionsList>
+                            {actions.map(action =>
+                                <ActionItem>
+                                    <ActionItemImg src={action.img} alt=""/>
+                                    <ActionItemText>{action.title}</ActionItemText>
+                                </ActionItem>
+                            )}
+                        </ActionsList>
+                    </ChannelsActions>
+                </ChannelsContent>
+            </ChannelsContainer>
+        </ChannelsWrapper>
     );
 };
 
