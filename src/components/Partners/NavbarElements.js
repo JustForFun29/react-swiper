@@ -3,6 +3,7 @@ import bg from "../../images/partners/Фон.png"
 
 export const PartnersWrapper = styled.section`
   padding: 90px 0;
+  margin: 0 auto;
   background-image: url("${bg}");
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,11 +11,16 @@ export const PartnersWrapper = styled.section`
 `;
 
 export const PartnersInner = styled.div`
+  max-width: 1100px;
+  padding: 0 15px;
+  margin: 0 auto;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-items: center;
-  
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const PartnersTitle = styled.h3`
@@ -29,22 +35,39 @@ export const PartnersTitle = styled.h3`
   max-width: 400px;
   @media (max-width: 480px) {
     font-size: 32px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 `;
 export const PartnersItem = styled.div`
   position: relative;
   height: 200px;
   color: #ffffff;
+  @media (max-width: 460px) {
+    height: 220px;
+  }
 `;
 
 export const PartnersItemImg = styled.img`
   width: 150px;
+  @media (max-width: 460px) {
+    width: 200px;
+  }
 `;
 
 export const PartnersItemText = styled.p`
   width: 100%;
   position: absolute;
-  left: 23px;
-  top: 108px;
+  left: 38px;
+  top: 137px;
+  @media (max-width: 460px) {
+    font-size: 20px;
+  }
+`;
+
+export const MobileSwiper = styled.div`
+  padding: 0 15px;
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
 `;

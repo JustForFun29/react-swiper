@@ -8,7 +8,6 @@ import Footer from "../components/Footer";
 import Pricing from "../components/Pricing/Pricing";
 import SwiperBlock from "../components/SwiperBlock";
 import Channels from "../components/Channels";
-import '../App.css'
 import {slides, slides2, tabs, tabs2, partners} from "../data"
 import Partners from "../components/Partners";
 
