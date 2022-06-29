@@ -1,5 +1,22 @@
-import partners1 from "./images/partners/ттс.png"
-
+import ttc from "./images/partners/ттс.png"
+import jusan from './images/partners/Jusan.png'
+import beeline from './images/partners/Beeline.png'
+import hikvision from './images/partners/Hikvision.png'
+import rubetek from './images/partners/Rubetek.png'
+import mimosa from './images/partners/Mimosa.png'
+import almaTV from './images/partners/AlmaTV.png'
+import rams from './images/partners/Rams.png'
+import qurylys from './images/partners/Qurylys.png'
+import sensata from './images/partners/Sensata.png'
+import k7 from './images/partners/K7.png'
+import qazaqStroy from './images/partners/Qazaqstroy.png'
+import sheberbuild from './images/partners/Sheberbuild.png'
+import tvcom from './images/partners/TVcom.png'
+import taudevelopment from './images/partners/Taudevelopment.png'
+import mercury from './images/partners/Mercury.png'
+import kss from './images/partners/KSS.png'
+import marden from './images/partners/Marden.png'
+import orda from './images/partners/Orda.png'
 
 export const slides = [
     {id: 1, color: '#fcba03', speed: 50, units: "Mbps"},
@@ -81,41 +98,96 @@ export const partners = [
     {
         id: 1,
         title: "ТТС Транстелеком",
-        img: partners1,
+        img: ttc,
     },
     {
         id: 2,
-        title: "ТТС Транстелеком",
-        img: partners1,
+        title: "Jusan Mobile",
+        img: jusan,
     },
     {
         id: 3,
-        title: "ТТС Транстелеком",
-        img: partners1,
+        title: "Beeline",
+        img: beeline,
     },
     {
         id: 4,
-        title: "ТТС Транстелеком",
-        img: partners1,
+        title: "Hikvision",
+        img: hikvision,
     },
     {
         id: 5,
-        title: "ТТС Транстелеком",
-        img: partners1,
+        title: "Rubetek",
+        img: rubetek,
     },
     {
         id: 6,
-        title: "ТТС Транстелеком",
-        img: partners1,
+        title: "Mimosa",
+        img: mimosa,
     },
     {
         id: 7,
-        title: "ТТС Транстелеком",
-        img: partners1,
+        title: "AlmaTV",
+        img: almaTV,
     },
     {
         id: 8,
-        title: "ТТС Транстелеком",
-        img: partners1,
+        title: "RAMS Kazakhstan",
+        img: rams,
+    },
+    {
+        id: 9,
+        title: "Exclusive Qurylys",
+        img: qurylys,
+    },
+    {
+        id: 10,
+        title: "Sensata",
+        img: sensata,
+    },
+    {
+        id: 11,
+        title: "K7 строительный холдинг",
+        img: k7,
+    },
+    {
+        id: 12,
+        title: "Qazaq stroy",
+        img: qazaqStroy,
+    },
+    {
+        id: 13,
+        title: "Sheber build",
+        img: sheberbuild,
+    },
+    {
+        id: 14,
+        title: "TVcom",
+        img: tvcom,
+    },
+    {
+        id: 15,
+        title: "Tau-development",
+        img: taudevelopment,
+    },
+    {
+        id: 16,
+        title: "Mercury properties",
+        img: mercury,
+    },
+    {
+        id: 17,
+        title: "Казстройсервис",
+        img: kss,
+    },
+    {
+        id: 18,
+        title: "Marder property",
+        img: marden,
+    },
+    {
+        id: 19,
+        title: "Orda-Invest",
+        img: orda,
     },
 ]
